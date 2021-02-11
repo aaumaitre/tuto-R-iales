@@ -10,6 +10,7 @@ municipios <- st_read("mapas/shapefile/Municipios_IGN.shp")
 
 
 #data on poverty (viene de https://www.ine.es/experimental/atlas/exp_atlas_tab.htm#)
+# El csv: https://gist.githubusercontent.com/93degree/c82e2c92569e7912b3322fcdbd83add5/raw/1bef1aebc7f118931105b8314cdfcbff6762579b/datos_pobreza.csv
 ine_poverty <- read_csv2("mapas/datos_pobreza.csv")
 
 ine_clean <- ine_poverty%>%
